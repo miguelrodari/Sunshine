@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <EditTextPreference
+        android:key="@string/pref_location_key"
+        android:title="@string/pref_location_label"
+        android:defaultValue="@string/pref_location_default"
+        android:inputType="text"
+        android:singleLine="true"/>
+    <ListPreference
+        android:key="@string/pref_temp_key"
+        android:title="@string/pref_temp_label"
+        android:defaultValue="@string/pref_temp_default"
+        android:entries="@array/temp_array"
+        android:entryValues="@array/temp_value_array"/>
+    <CheckBoxPreference
+        android:key="@string/pref_notification_key"
+        android:title="@string/pref_notification_label"
+        android:defaultValue="@string/pref_notification_default"
+        android:summaryOn="@string/pref_notification_true"
+        android:summaryOff="@string/pref_notification_false"
+        />
+    <ListPreference
+        android:key="@string/pref_local_key"
+        android:title="@string/pref_local_label"
+        android:defaultValue="@string/pref_local_default"
+        android:entries="@array/local_array"
+        android:entryValues="@array/local_value_array"/>
+</PreferenceScreen>
